@@ -143,9 +143,18 @@ class Lambdasian {
 */
 class Instructor extends Lambdasian {
  constructor(stats) {
-
-   
+  super(stats);
+  this.specialty = stats.specialty;
+  this.favLanguage = stats.favLanguage;
+  this.catchPhrase = stats.catchPhrase;
  }
+  demo(subject){
+    return (`Today we are learning about ${subject}`);
+  };
+  grade(student,subject){
+    return (`${student.name} receives a perfect score on ${subject}`);
+  };
+ 
 }
 
 /*
